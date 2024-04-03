@@ -1,0 +1,187 @@
+<!-- Spent 02 hours and 05 minutes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Documentation</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="path/to/normalize.css">
+        <!-- LESS -->
+        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script>
+            $(document).ready(function() {
+                // below is for .click()
+                $('section #click').click(function () { alert("This is an alert box! because you clicked click button"); });
+                // below is for .hide()
+                $('section #hide').click(function () { $('section .hide_it').hide(); });
+                // below is for .show()
+                $('section #show').click(function () { $('section .hide_it').show(); });
+                // below is for .toggle()
+                $('section #toggle').click(function () { $('section .toggle_it').toggle(); });
+                // below is for .slideDown()
+                $('section #slideDown').click(function () { $('div.slideit_down').slideDown("slow"); });
+                // below is for .slideUp()
+                $('section #slideUp').click(function () { $('div.slideit_up').slideUp(); });
+                // below is for .slideToggle()
+                $('section #slideToggle').click(function () { $('div.slide_toggle').slideToggle(); });
+                // below is for .fadeIn()
+                $('section #fadeIn').click(function () { $('div.fade_in').fadeIn("slow"); });
+                // below is for .fadeOut()
+                $('section #fadeOut').click(function () { $('div.fade_out').fadeOut("slow"); });
+                // below is for .addClass()
+                $('section #addClass').click(function () { $(this).addClass("selected"); });
+                // below is for .before()
+                $('section #before').click(function () { $('span.before').before("Viola!!"); });
+                // below is for .after()
+                $('section #after').click(function () { $('span.message').after("Village 88 is awesome!!!"); });
+                // below is for .append()
+                $('section #append').click(function () { $('span.village').append("!"); });
+                // below is for .html()
+                $('section #html').click(function () { $('p.apply_css').html("<p class='title'>Html</p>"); });
+                // below is for .attr()
+                $('section #attr').click(function () { $('div.dancing_cat img').attr("src", "/img/wow-cat.gif"); });
+                // below is for .val()
+                $('section #val').click(function () { $('#change').val("It is now Changed!"); });
+                // below is for .text()
+                $('section #text').click(function () { $('p').text("Village 88 Rocks!!!!😎😎😎😎"); });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <menu>
+                <a href="#click">.click()</a>
+                <a href="#hide">.hide()</a>
+                <a href="#show">.show()</a>
+                <a href="#toggle">.toggle()</a>
+                <a href="#slideDown">.slideDown()</a>
+                <a href="#slideUp">.slideUp()</a>
+                <a href="#slideToggle">.slideToggle()</a>
+                <a href="#fadeIn">.fadeIn()</a>
+                <a href="#fadeOut">.fadeOut()</a>
+                <a href="#addClass">.addClass()</a>
+                <a href="#before">.before()</a>
+                <a href="#after">.after()</a>
+                <a href="#append">.append()</a>
+                <a href="#html">.html()</a>
+                <a href="#attr">.attr()</a>
+                <a href="#val">.val()</a>
+                <a href="#text">.text()</a>
+            </menu>
+            <main>
+                <header>
+                    <h1>My JQuery Mini Documentation</h1>
+                </header>
+                <section>
+                    <p>Click</p>
+                    <span id="click">.click()</span>
+                    <span class="descriptions">Binds an event handler to the "click" JavaScript event, or trigger that event on an element. Example: Clicking the button <i>.click()</i> will display alert box.</span>
+                </section>
+                <section>
+                    <p>Hide</p>
+                    <span id="hide">.hide()</span>
+                    <span class="descriptions">Hides the matched elements.<span class="hide_it">Example: Hiding this paragraph by pressing <i>.hide()</i>.</span></span>
+                </section>
+                <section>
+                    <p>Show</p>
+                    <span id="show">.show()</span>
+                    <span class="descriptions">Displays the matched elements. Example: Showing the hidden paragraph here by pressing <i>.show()</i> button.</span>
+                </section>
+                <section>
+                    <p>Toggle</p>
+                    <span id="toggle">.toggle()</span>
+                    <span class="descriptions">Display or hide the matched elements. <span class="toggle_it">Example: Show or hide this paragraph by pressing <i>.toggle()</i>.</span></span>
+                </section>
+                <section>
+                    <p>Slide Down</p>
+                    <span id="slideDown">.slideDown()</span>
+                    <span class="descriptions">Display the matched elements with a sliding motion. Click the <i>.slideDown</i> button for an example
+                        <div class="slideit_down"><img src="/img/cat.gif" alt="cat shocked"></div>
+                    </span>
+                </section>
+                <section>
+                    <p>Slide Up</p>
+                    <span id="slideUp">.slideUp()</span>
+                    <span class="descriptions">Hide the matched elements with a sliding motion. Click the <i>.slideUp</i> button to help this cat slide up 😅.
+                        <div class="slideit_up"><img src="/img/cat-slideup.gif" alt="Cat playing in the slide"></div>
+                    </span>
+                </section>
+                <section>
+                    <p>Slide Toggle</p>
+                    <span id="slideToggle">.slideToggle()</span>
+                    <span class="descriptions">Display or hide the matched elements with a sliding motion. Click button <i>.slideToggle</i> for an example to hide and show this sliding cat in sliding motion.
+                        <div class="slide_toggle"><img src="/img/cat-slidetogglegif.gif" alt="Cat sliding in the floor"></div>
+                    </span>
+                </section>
+                <section>
+                    <p>Fade In</p>
+                    <span id="fadeIn">.fadeIn()</span>
+                    <span class="descriptions">Display the matched elements by fading them to opaque. Click the <i>.fadeIn()</i> button to display an image.
+                        <div class="fade_in"><img src="/img/cat-sup.gif" alt="Jumping cat"></div>
+                    </span>
+                </section>
+                <section>
+                    <p>Fade Out</p>
+                    <span id="fadeOut">.fadeOut()</span>
+                    <span class="descriptions">Hide the matched elements by fading them to transparent. Click <i>.fadeOut()</i> button to hide this cat.
+                        <div class="fade_out"><img src="/img/cat-fadeout.gif" alt="Cat hiding inside the couch"></div>
+                    </span>
+                </section>
+                <section>
+                    <p>Add Class</p>
+                    <span id="addClass">.addClass()</span>
+                    <span class="descriptions">Adds the specified class(es) to each element in the set of matched elements. Pressing the <i>.addClass()</i> button will add some element into it, please try.</span>
+                </section>
+                <section>
+                    <p>Before</p>
+                    <span id="before">.before()</span>
+                    <span class="descriptions">Insert content, specified by the parameter, before each element in the set of matched elements. Noticed this sentence: "Viola!!" will appear before this sentence:"<span class="before">Magic!!!</span>" when pressing <i>.before()</i>. Have a try.</span>
+                </section>
+                <section>
+                    <p>After</p>
+                    <span id="after">.after()</span>
+                    <span class="descriptions">Insert content, specified by the parameter, after each element in the set of matched elements. By pressing <i>.after()</i>, noticed how new setence will keep adding after this <span class="message">message.</span></span>
+                </section>
+                <section>
+                    <p>Append</p>
+                    <span id="append">.append()</span>
+                    <span class="descriptions">Insert content, specified by the parameter, to the end of each element in the set of matched elements. Set this as an example, when pressing the <i>.append()</i> a sign "!" will add in sentence: "<span class="village">I learn so much in Village 88</span>"</span>
+                </section>
+                <section>
+                    <p class="apply_css">Html</p>
+                    <span id="html">.html()</span>
+                    <span class="descriptions">Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched
+                    element. Pressing the button <i>.html()</i> will make the title have background-color and color elements.</span>
+                </section>
+                <section>
+                    <p>Attr</p>
+                    <span id="attr">.attr()</span>
+                    <span class="descriptions">Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for
+                    every matched element. Click <i>.attr()</i> to change the photo below: 
+                        <div class="dancing_cat"><img src="/img/dancing-cat.gif" alt="Dancing Cat"></div>
+                    </span>
+                </section>
+                <section>
+                    <p>Val</p>
+                    <span id="val">.val()</span>
+                    <span class="descriptions">Get the current value of the first element in the set of matched elements or set the value of every matched element. If you press <i>.val()</i>, value of the input will change.
+                        <div>
+                            <input type="text" id="change" value="Change Me!!">
+                        </div>
+                    </span>
+                </section>
+                <section>
+                    <p>Text</p>
+                    <span id="text">.text()</span>
+                    <span class="descriptions">Get the combined text contents of each element in the set of matched elements, including their descendants, or set the
+                    text contents of the matched elements. Pressing the <i>.text()</i>change the text with p element.</span>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
